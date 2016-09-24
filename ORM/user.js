@@ -19,7 +19,7 @@ var User = sequelize.define('usuario', {
     type: Sequelize.STRING
   },
 
-  Id: {
+  ID: {
     type: Sequelize.INTEGER,
     primaryKey: true
   }
