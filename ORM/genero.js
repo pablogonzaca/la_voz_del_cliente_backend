@@ -1,10 +1,10 @@
-var sequelize = require('database');
+var Sequelize = require("sequelize");
+var sequelize = require('./database');
 
-
-var User = sequelize.define('genero', {
+var Genero = sequelize.define('genero', {
   Id: {
-    type: Sequelize.INTEGER,
-    primaryKey: true;
+    type: Sequelize.CHAR,
+    primaryKey: true,
   },
 
   Nombre: {
@@ -12,5 +12,8 @@ var User = sequelize.define('genero', {
   },
 
 }, {
-  freezeTableName: true // Model tableName will be the same as the model name
+  freezeTableName: true, // Model tableName will be the same as the model name
+  timestamps: false
 });
+
+module.exports = Genero;

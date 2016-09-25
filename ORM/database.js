@@ -1,4 +1,6 @@
-var sequelize = new Sequelize('database', 'username', 'password', {
+var Sequelize = require("sequelize");
+
+var sequelize = new Sequelize('programathon2016', 'root', 'root', {
   host: 'localhost',
   dialect: 'mysql',
 

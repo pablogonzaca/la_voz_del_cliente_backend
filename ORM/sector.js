@@ -1,7 +1,8 @@
-var sequelize = require('database');
+var Sequelize = require("sequelize");
+var sequelize = require('./database');
 
 
-var User = sequelize.define('sector', {
+var Sector = sequelize.define('sector', {
 
   Nombre: {
     type: Sequelize.CHAR
@@ -13,5 +14,8 @@ var User = sequelize.define('sector', {
   }
 
 }, {
-  freezeTableName: true // Model tableName will be the same as the model name
+  freezeTableName: true, // Model tableName will be the same as the model name
+  timestamps: false
 });
+
+module.exports = Sector;

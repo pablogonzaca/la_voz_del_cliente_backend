@@ -1,4 +1,5 @@
-var sequelize = require('database');
+var Sequelize = require("sequelize");
+var sequelize = require('./database');
 
 
 var User = sequelize.define('tiporedsocial', {
